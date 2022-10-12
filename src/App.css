@@ -1,0 +1,35 @@
+.navbar{
+    height: 12vh;
+    background-color: grey;
+}
+.nav{
+    height: 12vh;
+    background-color: grey;
+}
+.navbarlinks{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    padding-right: 18%;
+    height: 5vh;
+}
+.navlinks{
+    text-decoration: none;
+    color: white;
+    padding-right: 14%;
+    font-weight: 600;
+    font-size: larger;
+}
+.navlinks-div{
+    width: 26vw;
+    margin-left: auto;
+}
+.nav-div{
+    width: 40vw;
+    height: 5vh;
+    margin-left: auto;
+}
+.logo{
+    height: 7vh;
+}
