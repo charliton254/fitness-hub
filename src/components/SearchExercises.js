@@ -9,8 +9,6 @@ const SearchExercises = ({setExercises}) =>{
         if (search){
           const exercisesData = await fetchData
           ('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
-
-          console.log(exercisesData);
           
           const searchedexercises = exercisesData.filter(
             (exercise) => exercise.name.toLowerCase().includes(search)
