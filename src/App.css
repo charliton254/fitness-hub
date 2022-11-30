@@ -1,35 +1,277 @@
 .navbar{
-    height: 12vh;
-    background-color: grey;
+    height: 10vh;
+    background-color: rgb(77, 74, 74);
+    display: flex;
+    width: 100%;
 }
-.nav{
-    height: 12vh;
-    background-color: grey;
+.logo{
+    height: 7vh;
+    display: flex;
+    margin-left: 7%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6%;
+}
+.navlinks-div{
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    justify-content: space-between;
+    display: flex;
 }
 .navbarlinks{
     text-decoration: none;
     color: white;
     font-weight: 500;
     font-size: larger;
-    padding-right: 18%;
-    height: 5vh;
+}
+.nav{
+    height: 10vh;
+    background-color: rgb(77, 74, 74);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-div{
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    justify-content: space-between;
+    display: flex;
 }
 .navlinks{
     text-decoration: none;
     color: white;
-    padding-right: 14%;
-    font-weight: 600;
+    font-weight: 500;
     font-size: larger;
 }
-.navlinks-div{
-    width: 26vw;
-    margin-left: auto;
+.login-surface{
+    background-color: rgb(36, 32, 32);
+    height: 100%;
 }
-.nav-div{
-    width: 40vw;
-    height: 5vh;
-    margin-left: auto;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  
 }
-.logo{
-    height: 7vh;
+::-webkit-scrollbar {
+    width: 0px;
+}
+.exercise-body{
+    background-color: #FFFAFB;
+}
+.detail-body{
+    background-color: #FFFAFB;
+    padding-bottom: 4%;
+}
+.hero-banner-img {
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    width: 700px;
+    height: 800px;
+}
+.exercise-card {
+    width: 350px;
+    height: 425px;
+    background: #fff;
+    border-top: 4px solid #FF2625;
+    border-bottom-left-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+.exercise-card img {
+    height: 320px;
+}
+  
+.exercise-card:hover{
+    transform: scale(1.1, 1.1);
+}
+.search-btn:hover {
+    color: #FF2625 !important;
+    border: 1px solid #FF2625 !important;
+}
+.detail-image {
+    width: 729px;
+    height: 742px;
+}
+.exercise-video {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 387px;
+    height: 381px;
+    text-decoration: none;
+}
+  
+
+@media screen and (max-width:1200px) {
+    .detail-image {
+      width: 300px;
+      height: 300px;
+    }
+   
+    .react-horizontal-scrolling-menu--scroll-container {
+      width: 500px;
+    }
+  
+    .left-arrow,
+    .right-arrow {
+      position: static !important;
+    }
+  
+    .hero-banner-img {
+      display: none;
+    }
+  
+    .exercise-card {
+      width: 320px;
+    }
+  
+    .exercise-video {
+      width: 320px;
+      height: 300px;
+    }
+  
+}
+  
+@media screen and (max-width:400px) {
+    .exercise-card {
+      width: 280px;
+    }
+}
+.footer{
+    background-color: rgb(77, 74, 74);
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+.footer p{
+    padding-top: 1%;
+}
+.timer-bar{
+    background-image: url('C:\Users\CHARLI\personal-projects\fitness-hub\fitness-hub\public\images\img-4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 70vh;
+}
+.timer-bar h1{
+    color: white;
+    text-align: center;
+    padding-top: 6%;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+.timer-bar h2{
+    width: 40%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+.timers{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+}
+.calendar{
+    text-align: center;
+    padding-bottom: 2%;
+}
+.calendar-contents{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    align-items: center;
+    width: 70vw;
+}
+.btn-calendar{
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 30%;
+    background-color: #e23e3e;
+   
+}
+.datepicker{
+    width: 100%;
+    justify-content: center;
+}
+.meals-bar{
+    background-image: url('C:\Users\CHARLI\personal-projects\fitness-hub\fitness-hub\public\images\img-5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 70vh;
+}
+.meals-bar h1{
+    color: white;
+    text-align: center;
+    padding-top: 6%;
+    font-size: 55px;
+    margin-bottom: 5%;
+}
+.meals-bar h2{
+    width: 40%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+.meals-bar h3{
+    color: white;
+    text-align: center;
+}
+.meals-target h1{
+    text-align: center;
+    padding-top: 3%;
+}
+.meals-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+.meal-btn{
+    width: 30vw;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    height: 3rem;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: rgb(233, 116, 116);
+}
+.meal-btn:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-out;
+}
+.results-h1{
+    padding: 0 0 0 5%;
+}
+.choice{
+    padding-bottom: 3%;
+    text-align: center;
 }
